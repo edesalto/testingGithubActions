@@ -14,6 +14,6 @@ jobs:
             - name: Tests
               run: npm run lint
             - name: Install zip
-              run: apt-get install zip -y
+              run: sudo apt-get install zip -y
             - name: Zip API
               run: zip -r api.zip .

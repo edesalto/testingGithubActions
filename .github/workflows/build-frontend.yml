@@ -18,8 +18,10 @@ jobs:
               run: npx ionic build --prod
             - name: Lists files
               run: ls -la
-            - name: Upload build to hosting environment
-              uses: Atyn/Simple-SFTP@0.0.2
+            - name: Fast FTP Action
+              uses: anvil-solutions/Fast-FTP-Action@2.1.0
               with:
-                url: ${{ secrets.SFTPURL }}
-                local-directory: www
+                server: genbri.com
+                port: 21
+                username: bodapp
+                password: zB%8wo410

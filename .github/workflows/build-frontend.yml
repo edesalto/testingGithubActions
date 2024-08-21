@@ -15,6 +15,6 @@ jobs:
             - name: Build
               run: npm run build
             - name: Build PWA
-              run: ionic build --prod
+              run: npx ionic build --prod
             - name: Lists files
               run: ls -la

@@ -14,5 +14,7 @@ jobs:
               run: npm install
             - name: Build
               run: npm run build
+            - name: Build PWA
+              run: ionic build --prod
             - name: Lists files
               run: ls -la

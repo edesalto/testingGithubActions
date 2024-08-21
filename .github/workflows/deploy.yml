@@ -20,5 +20,5 @@ jobs:
             - name: Publish build artifact
               uses: actions/upload-artifact@v4
               with:
-                name: api.zip
+                name: artifact
                 path: api.zip
